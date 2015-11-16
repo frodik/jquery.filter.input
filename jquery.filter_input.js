@@ -56,7 +56,9 @@
               return true;
             } else if (event.type=='after_paste') {
               var string = input.val();
-              var regex = new RegExp('^('+options.regex+')+$');
+              // If options.regex is a regular expression, grab the source. If it's a string use it as is
+              var regexString = (typeof options.regex === 'string' ? options.regex : options.regex.source);
+              var regex = new RegExp('^('+regexString+')+$');
             } else {
               return false;
             }
