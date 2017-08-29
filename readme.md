@@ -1,10 +1,10 @@
-##JQuery plugin for input text field filtering
+## JQuery plugin for input text field filtering
 
 This is simple JQuery plugin for filtering text input field by using regexp. Only allowed characters will be inserted into input field, others will be silently dropped.
 
-###Usage example
+### Usage example
 
-```
+```js
 // only lowercase alphabets are allowed
 $('#text_input').filter_input({regex:'[a-z]'}); 
 
@@ -32,20 +32,10 @@ $('.input').filter_input({
   events:'keypress paste'
 });
 ```
-##Demo
+ 
+[Download](https://github.com/frodik/jquery.filter.input/archive/master.zip)
 
-Try to type something into this textbox. Only lowercase letters are allowed.
-
- [a-z] 
-
-And here are allowed only numbers and upper case letters
- [A-Z0-9]
-Download
-
-Text version (3 kB) 
-Zip version
-
-##Changelog
+## Changelog
 
 March 16, 2013 - released 1.4.2 - "paste" event is now supported and enabled by default with "keypress" as well. 
 
